@@ -9,4 +9,6 @@ addpath C:\Users\wyatt\Documents\GitHub\Field-methods-\Data\
 %Watts
 filename = 'Field Methods Data Fall 2024.xlsx'
 Resperation_Data = readtable('Field Methods Data Fall 2024.xlsx','Sheet','Soil Respiration')
-%%
+%% Goal is to get the data in readable chunks
+xlsread("Data\Field Methods Data Fall 2024.xlsx",'Soil Respiration')
+UnDiscover = xlswrite("Data\Field Methods Data Fall 2024.xlsx",1:6)
